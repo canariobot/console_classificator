@@ -1,5 +1,22 @@
 # Description
-I have created a consoles classificator by using a Convolutional Network as a master's practice
+I have created a consoles classificator by using a Convolutional Neural Network (CNN) as a master's practice. For this, I have created a Jupyter notebook with the code that should be executed and a dataset with 16 consoles (classes in this case): 
+- game_boy
+- nes
+- nintendo_64
+- nintendo_ds
+- nintendo_game_cube
+- nintendo_switch
+- ps1
+- ps2
+- ps3
+- ps4
+- ps5
+- wii
+- xbox_360
+- xbox_one
+- xbox_series_s
+- xbox_series_x
+For the practice, we had to create and train our own CNN and use another pretrained model with Transfer Learning (TL), which generally improves the results. My CNN has 4 Convolutional Layers and 4 Fully Connected Layers, and for TL, I used the ResNet model. I trained the last Convolutional Layer and the Fully Connected Layers. My network doesn't yield as good results as the one trained with the ResNet model, so I recommend training with ResNet.
 
 # Table of Contents
 - [Installation](#installation)
@@ -12,7 +29,7 @@ git clone https://github.com/israhr12/console_classificator.git
 ```
 
 2. Go to the repository directory:
-``` bash
+```bash
 cd console_classificator
 ```
 
@@ -30,3 +47,4 @@ source env/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
