@@ -47,4 +47,22 @@ source env/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+# Use
+Now you just need to run each cell in the order they appear in the conv_net.ipynb file. If you want to train and evaluate the ConvNet model, change the first parameter of the train() and evaluate_model_with_confusion_matrix functions to the model variable. On the other hand, if you want to train the ResNet model, replace the parameter with resnet. You also can change the number of ephocs by changing the parameter num_epochs.
+
+Model ConvNet:
+```bash
+train(model, train_loader, num_epochs=10)
+```
+```bash
+evaluate_model_with_confusion_matrix(model, test_loader)
+```
+
+Model ResNet:
+```bash
+train(resnet, train_loader, num_epochs=10)
+```
+```bash
+evaluate_model_with_confusion_matrix(resnet, test_loader)
+```
 
