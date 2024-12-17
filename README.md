@@ -16,6 +16,7 @@ I have created a consoles classificator by using a Convolutional Neural Network 
 - xbox_one
 - xbox_series_s
 - xbox_series_x
+
 For the practice, we had to create and train our own CNN and use another pretrained model with Transfer Learning (TL), which generally improves the results. My CNN has 4 Convolutional Layers and 4 Fully Connected Layers, and for TL, I used the ResNet model. I trained the last Convolutional Layer and the Fully Connected Layers. My network doesn't yield as good results as the one trained with the ResNet model, so I recommend training with ResNet.
 
 # Table of Contents
